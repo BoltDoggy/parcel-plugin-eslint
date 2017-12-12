@@ -4,7 +4,7 @@
 
 __Make Parcel surport ESlint.__
 
-[【What's the Parcel】](https://parceljs.org/)[【What's the ESlint](https://eslint.org/)
+[【What's the Parcel】](https://parceljs.org/)[【What's the ESlint】](https://eslint.org/)
 
 ## Using Plugin
 
