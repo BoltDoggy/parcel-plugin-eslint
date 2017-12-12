@@ -17,9 +17,7 @@ class MyAsset extends JSAsset {
         ownDebugger('before parse do eslint.');
 
         let res = engine.executeOnText(code, this.name, true);
-        let messages = eslintFormatter(res.results);
-
-        console.log(messages);
+        eslintFormatter(res.results);
 
         return await super.parse(code);
     }
