@@ -15,3 +15,7 @@ You must `node >= 8`
 ```
 npm i parcel-plugin-eslint -D
 ```
+
+## Examples
+
+* [default](https://github.com/lc60005457/parcel-plugin-vue) - Maybe you like [parcel-plugin-vue](https://github.com/lc60005457/parcel-plugin-vue)
