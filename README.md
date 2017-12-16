@@ -21,3 +21,13 @@ npm i parcel-plugin-eslint -D
 ## Examples
 
 * [default](https://github.com/lc60005457/parcel-plugin-vue) - Maybe you like [parcel-plugin-vue](https://github.com/lc60005457/parcel-plugin-vue)
+
+## Make some issues clear
+
+### You Should install parcel-bundler yourself
+
+The plugins for parcel-bundler need a same version of parcel-bundler at runtime.
+
+### You Should install eslint yourself
+
+You can choose the version of Eslint yourself.
