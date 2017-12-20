@@ -20,7 +20,7 @@ npm i parcel-plugin-eslint -D
 
 ## Examples
 
-* [default](https://github.com/lc60005457/parcel-plugin-vue) - Maybe you like [parcel-plugin-vue](https://github.com/lc60005457/parcel-plugin-vue)
+* [default](https://github.com/lc60005457/parcel-vue-demo) - Maybe you like [parcel-plugin-vue](https://github.com/lc60005457/parcel-plugin-vue)
 
 ## Make some issues clear
 
