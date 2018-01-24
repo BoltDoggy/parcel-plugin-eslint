@@ -4,7 +4,7 @@
   "description": "Make Parcel surport ESlint",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "rm -rf .cache && rm -rf dist && DEBUG=\"parcel-plugin-eslint:*\" node test/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +17,15 @@
   },
   "homepage": "https://github.com/lc60005457/parcel-plugin-eslint#readme",
   "dependencies": {
-    "debug": "^3.1.0"
+    "debug": "^3.1.0",
+    "eslint": "^4.16.0",
+    "parcel-bundler": "^1.5.0"
   },
   "peerDependencies": {
     "eslint": "~4",
     "parcel-bundler": "~1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1"
   }
 }
