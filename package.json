@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-eslint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Make Parcel surport ESlint",
   "main": "index.js",
   "scripts": {
@@ -18,8 +18,7 @@
   "homepage": "https://github.com/lc60005457/parcel-plugin-eslint#readme",
   "dependencies": {
     "debug": "^3.1.0",
-    "eslint": "^4.16.0",
-    "parcel-bundler": "^1.5.0"
+    "eslint": "^4.16.0"
   },
   "peerDependencies": {
     "eslint": "~4",
