@@ -1,27 +1,39 @@
 const Debug = require('debug');
 const eslint = require('eslint');
-const eslintFormatter = require("eslint/lib/formatters/stylish");
-const Logger = require('parcel-bundler/src/Logger');
+const eslintFormatter = require("eslint-friendly-formatter");
+const jsonfile = require('jsonfile');
 const JSAsset = require('parcel-bundler/src/assets/JSAsset');
+const constFile = require('./const');
 
 let ownDebugger = Debug('parcel-plugin-eslint:MyAsset');
-let logger = new Logger({});
 
-let engine = new eslint.CLIEngine({
-    ignorePattern: '!node_modules/*'
-});
+let engine = new eslint.CLIEngine({});
 
 ownDebugger('MyAsset');
 
 class MyAsset extends JSAsset {
-    async transform() {
+    async load() {
         ownDebugger('before parse do eslint.');
 
-        let res = engine.executeOnText(this.contents, this.name, true);
-        logger.clear();
-        logger.write(eslintFormatter(res.results));
+        let code = await super.load();
 
-        return await super.transform();
+        if (!engine.isPathIgnored(this.name)) {
+            let res = engine.executeOnText(code, this.name, true);
+            let ret = eslintFormatter(res.results);
+
+            if (ret) {
+                let cache;
+                try {
+                    cache = jsonfile.readFileSync(constFile.cacheFile);
+                } catch (e) {
+                    cache = {};
+                }
+                cache.log = cache.log || [];
+                cache.log.push(ret);
+                jsonfile.writeFileSync(constFile.cacheFile, cache);
+            }
+        }
+        return code;
     }
 }
 
