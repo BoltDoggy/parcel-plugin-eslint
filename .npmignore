@@ -1,7 +1,12 @@
+.cache
+dist
+examples
 node_modules
+#src
+test
+.eslintrc.js
 .gitignore
 #index.js
-#MyAsset.js
 #package-lock.json
 #package.json
 #README.md
