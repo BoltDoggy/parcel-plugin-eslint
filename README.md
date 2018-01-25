@@ -4,7 +4,7 @@
 
 <img src="http://img.souche.com/f2e/3a1e03cd7e9bbb748270de9a84db26f3.png" align="right" width="140">
 
-__Make Parcel surport ESlint.__
+__Make Parcel support ESlint.__
 
 [【What's the Parcel】](https://parceljs.org/)[【What's the ESlint】](https://eslint.org/)
 
