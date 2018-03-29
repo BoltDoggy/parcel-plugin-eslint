@@ -1,3 +1,4 @@
+const logger = require('parcel-bundler/src/Logger');
 const mkdirp = require('mkdirp');
 const jsonfile = require('jsonfile');
 const constFile = require('./src/const');
@@ -19,10 +20,10 @@ module.exports = function (bundler) {
         }
         cache.log = cache.log || [];
         if (cache.log.length) {
-            bundler.logger.clear();
+            logger.clear();
         }
         cache.log.forEach(element => {
-            bundler.logger.write(element);
+            logger.write(element);
         });
         
         jsonfile.writeFileSync(constFile.cacheFile, {});
