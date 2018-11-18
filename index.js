@@ -1,15 +1,15 @@
-const logger = require('parcel-bundler/src/Logger');
+const Logger = require('parcel-bundler/src/Logger');
 const mkdirp = require('mkdirp');
 const jsonfile = require('jsonfile');
 const constFile = require('./src/const');
 
 mkdirp.sync(constFile.cacheDir);
+const logger = new Logger({});
 
 module.exports = function (bundler) {
     jsonfile.writeFileSync(constFile.cacheFile, {});
 
     bundler.addAssetType('js', require.resolve('./src/EslintAsset.js'));
-    // bundler.addPackager('vue', require.resolve('./MyPackager'));
 
     bundler.on('bundled', () => {
         let cache;
