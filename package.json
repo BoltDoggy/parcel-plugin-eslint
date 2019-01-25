@@ -17,19 +17,20 @@
   },
   "homepage": "https://github.com/lc60005457/parcel-plugin-eslint#readme",
   "dependencies": {
-    "debug": "^3.1.0",
-    "eslint": "^4.16.0",
-    "eslint-friendly-formatter": "^3.0.0",
-    "jsonfile": "^4.0.0"
+    "@parcel/logger": "^1.11.0",
+    "debug": "^4.1.1",
+    "eslint": "^5.12.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "jsonfile": "^5.0.0"
   },
   "peerDependencies": {
-    "eslint": "~4",
+    "eslint": "~5.12.1",
     "parcel-bundler": ">=1.11.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "parcel-bundler": "^1.5.0"
+    "babel-eslint": "^10.0.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.15.0",
+    "parcel-bundler": "^1.11.0"
   }
 }
