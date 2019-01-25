@@ -24,7 +24,7 @@
   },
   "peerDependencies": {
     "eslint": "~4",
-    "parcel-bundler": "~1"
+    "parcel-bundler": ">=1.11.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
