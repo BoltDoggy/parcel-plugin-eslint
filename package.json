@@ -24,7 +24,7 @@
     "jsonfile": "^5.0.0"
   },
   "peerDependencies": {
-    "eslint": "~5.12.1",
+    "eslint": ">=5.0.0",
     "parcel-bundler": ">=1.11.0"
   },
   "devDependencies": {
