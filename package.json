@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-eslint",
-  "version": "1.0.7",
+  "version": "1.0.8-2",
   "description": "Make Parcel surport ESlint",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,6 @@
   "dependencies": {
     "@parcel/logger": "^1.11.0",
     "debug": "^4.1.1",
-    "eslint": "^5.12.1",
     "eslint-friendly-formatter": "^4.0.1",
     "jsonfile": "^5.0.0"
   },
@@ -29,6 +28,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
+    "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.15.0",
     "parcel-bundler": "^1.11.0"

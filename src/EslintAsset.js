@@ -7,7 +7,9 @@ const constFile = require('./const');
 
 let ownDebugger = Debug('parcel-plugin-eslint:MyAsset');
 
-let engine = new eslint.CLIEngine({});
+let engine = new eslint.CLIEngine({
+    ignorePattern: "**/node_modules/**"
+});
 
 ownDebugger('MyAsset');
 
